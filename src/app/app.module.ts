@@ -1,28 +1,21 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppComponent } from './app.component';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatListModule } from '@angular/material/list';
-import { MatCardModule } from '@angular/material/card';
-import { MatIconModule } from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatExpansionModule } from '@angular/material/expansion';
+import {MaterialModule} from "./material/material/material.module";
+import {NavbarModule} from "./component/navbar/navbar.module";
+import { AppComponent } from './app.component';
+import { MainPageComponent } from './component/main-page/main-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MainPageComponent,
   ],
   imports: [
     BrowserModule,
-    MatToolbarModule,
-    MatSidenavModule,
-    MatListModule,
-    MatCardModule,
-    MatIconModule,
-    BrowserModule,
-    BrowserAnimationsModule, 
-    MatExpansionModule
+    BrowserAnimationsModule,
+    MaterialModule,
+    NavbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -25,7 +25,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "@angular/material/prebuilt-themes/pink-bluegrey.css",
+              "src/styles.css",
+              "C:\\Angular\\AppOneFirst\\node_modules\\primeflex\\primeflex.css"
             ],
             "scripts": []
           },
@@ -87,7 +89,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "@angular/material/prebuilt-themes/pink-bluegrey.css",
+              "src/styles.css",
+              "/node_modules/primeflex/primeflex.css"
             ],
             "scripts": []
           }

@@ -1,0 +1,120 @@
+<!--
+<mat-toolbar>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>My App</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button>
+</mat-toolbar>
+-->
+
+<mat-sidenav-container fullscreen>
+
+  <mat-sidenav #sidenav mode="push" [ngStyle]="{ width: '250px' }" class="text-center">
+    <mat-toolbar class="text-center">
+      <span class="text-center">Nombre Empresa</span>
+    </mat-toolbar>
+
+    <mat-nav-list>
+      <mat-list-item
+        *ngFor="let item of sidebarItems"
+        (click)="sidenav.toggle()"
+      >
+        <mat-icon matListItemIcon>{{ item.icon }}</mat-icon>
+        {{ item.label }}
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-toolbar>
+    <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span class="example-spacer"></span>
+    <span class="">Nombre Empresa</span>
+
+  </mat-toolbar>
+
+  <!--<mat-grid-list cols="4" >
+    <mat-grid-tile *ngFor="let tile of tiles" [colspan]="tile.cols" [rowspan]="tile.rows" [style.background]="tile.color">
+      {{ tile.text }}
+    </mat-grid-tile>
+  </mat-grid-list>-->
+  <div
+    class="shadow-6 m-3 surface-card text-center  border-round-sm flex align-items-center justify-content-center font-semibold">
+    <div class="block bg-primary font-bold text-center p-4 border-round mb-3">
+      <div class="h-10rem border-round bg-primary font-bold p-3 m-3 flex align-items-center justify-content-center">
+        <mat-card class="example-card">
+          <mat-card-header>
+            <mat-card-title></mat-card-title>
+            <mat-card-subtitle>Sección 1</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <p>Contenido sobre la seccion 1</p>
+            <p>{{longText}}</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>Aceptar</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="shadow-6 m-3 surface-card text-center  border-round-sm flex align-items-center justify-content-center font-semibold">
+    <div class="block bg-primary font-bold text-center p-4 border-round mb-3">
+      <div class="h-10rem border-round bg-primary font-bold p-3 m-3 flex align-items-center justify-content-center">
+        <mat-card class="example-card">
+          <mat-card-header>
+            <mat-card-title></mat-card-title>
+            <mat-card-subtitle>Sección 2</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <p>Contenido sobre la seccion 2</p>
+            <p>{{longText}}</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>Aceptar</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+  <footer class="pie-pagina">
+    <div class="grupo-1">
+      <div class="box">
+        <figure>
+          <a href="#">
+            <img src="C:\Angular\AppOneFirst\src\assets\js.png">
+          </a>
+        </figure>
+      </div>
+      <div class="box">
+        <h2>SOBRE NOSOTROS</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+      </div>
+      <div class="box">
+        <h2>Redes sociales</h2>
+        <div class="red-social">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-youtube"></a>
+        </div>
+      </div>
+    </div>
+    <div class="grupo-2">
+      <small>&copy; 2021 <b>Copyright</b> - Todos los Derechos Reservados.</small>
+    </div>
+  </footer>
+</mat-sidenav-container>
+
+

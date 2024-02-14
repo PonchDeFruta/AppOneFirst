@@ -1,90 +1,9 @@
-<div class="container">
-  <mat-toolbar class="header">
-    <button mat-icon-button (click)="toggleMenu()">
-      <mat-icon>menu</mat-icon>
-    </button>
-    <span>Header</span>
-  </mat-toolbar>
-  <div class="contenido">
-    <mat-sidenav class="sidebar" mode="side" [opened]="isMenuOpen">
-      <mat-nav-list>
-        <mat-list-item>
-          <mat-icon mat-list-icon>home</mat-icon>
-          <h3 mat-line>Menu Lateral</h3>
-        </mat-list-item>
-      </mat-nav-list>
-    </mat-sidenav>
-    <div class="main-content">
-
-      <mat-card>
-        <mat-card-content>
-          <h2>Contenido Principal (como se le va a hacer a la landinpage ??? i don't know)</h2>
-          <p>Se utilizo flex en los estilos de css para un codigo mas limpio en html y reutiliozar los estilos dfe las clases de</p>
-        </mat-card-content>
-        <mat-card-content>
-          <h2>Contenido Principal (como se le va a hacer a la landinpage ??? i don't know)</h2>
-          <p>Se utilizo flex en los estilos de css para un codigo mas limpio en html y reutiliozar los estilos dfe las clases de</p>
-        </mat-card-content>
-        <mat-card-content>
-          <h2>Contenido Principal (como se le va a hacer a la landinpage ??? i don't know)</h2>
-          <p>Se utilizo flex en los estilos de css para un codigo mas limpio en html y reutiliozar los estilos dfe las clases de</p>
-        </mat-card-content>
-        <mat-card-content>
-          <h2>Contenido Principal (como se le va a hacer a la landinpage ??? i don't know)</h2>
-          <p>Se utilizo flex en los estilos de css para un codigo mas limpio en html y reutiliozar los estilos dfe las clases de</p>
-        </mat-card-content>
-        <mat-card-content>
-          <h2>Contenido Principal (como se le va a hacer a la landinpage ??? i don't know)</h2>
-          <p>Se utilizo flex en los estilos de css para un codigo mas limpio en html y reutiliozar los estilos dfe las clases de</p>
-        </mat-card-content>
-        <mat-card-content>
-          <h2>Contenido Principal (como se le va a hacer a la landinpage ??? i don't know)</h2>
-          <p>Se utilizo flex en los estilos de css para un codigo mas limpio en html y reutiliozar los estilos dfe las clases de</p>
-        </mat-card-content>
-        
-        <mat-card-content>
-          <h2>Contenido Principal (como se le va a hacer a la landinpage ??? i don't know)</h2>
-          <p>Se utilizo flex en los estilos de css para un codigo mas limpio en html y reutiliozar los estilos dfe las clases de</p>
-        </mat-card-content>
-        <mat-card-content>
-          <h2>Contenido Principal (como se le va a hacer a la landinpage ??? i don't know)</h2>
-          <p>Se utilizo flex en los estilos de css para un codigo mas limpio en html y reutiliozar los estilos dfe las clases de</p>
-        </mat-card-content>
-        <mat-card-content>
-          <h2>Contenido Principal (como se le va a hacer a la landinpage ??? i don't know)</h2>
-          <p>Se utilizo flex en los estilos de css para un codigo mas limpio en html y reutiliozar los estilos dfe las clases de</p>
-        </mat-card-content>
-        
-
-    </mat-card>
-
-            <h2>Preguntas Frecuentes</h2>
-      <mat-card>
-   
-      <div class="faq-container">
-
-        <mat-accordion>
-          <mat-expansion-panel *ngFor="let faq of faqs">
-            <mat-expansion-panel-header>
-              <mat-panel-title>
-                {{ faq.question }}
-              </mat-panel-title>
-            </mat-expansion-panel-header>
-            <p>{{ faq.answer }}</p>
-          </mat-expansion-panel>
-        </mat-accordion>
-      </div>
 
 
-    </mat-card>
-    </div>
-    
+<div class="grid p-3">
+  <div class="col-12 mt-5 md:col-6 md:col-offset-3 md:mt-8">
+
+    <app-navbar></app-navbar>
+
   </div>
-
-
-  <mat-toolbar class="footer">
-    <span>Footer</span>
-  </mat-toolbar>
 </div>
-
-
