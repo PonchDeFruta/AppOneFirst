@@ -1,65 +1,32 @@
-<!--
-<mat-toolbar>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-    <mat-icon>menu</mat-icon>
-  </button>
-  <span>My App</span>
-  <span class="example-spacer"></span>
-  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <mat-icon>favorite</mat-icon>
-  </button>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-    <mat-icon>share</mat-icon>
-  </button>
-</mat-toolbar>
--->
+<mat-sidenav-container fullscreen class="blanco">
 
-<mat-sidenav-container fullscreen>
-
-  <mat-sidenav #sidenav mode="push" [ngStyle]="{ width: '250px' }" class="text-center">
-    <mat-toolbar class="text-center">
-      <span class="text-center">Nombre Empresa</span>
-    </mat-toolbar>
-
-    <mat-nav-list>
-      <mat-list-item
-        *ngFor="let item of sidebarItems"
-        (click)="sidenav.toggle()"
-      >
-        <mat-icon matListItemIcon>{{ item.icon }}</mat-icon>
-        {{ item.label }}
-      </mat-list-item>
-    </mat-nav-list>
-  </mat-sidenav>
-
-  <mat-toolbar>
-    <button mat-icon-button (click)="sidenav.toggle()">
-      <mat-icon>menu</mat-icon>
-    </button>
-    <span class="example-spacer"></span>
-    <span class="">Nombre Empresa</span>
-
+  <mat-toolbar color="primary">
+    <span class="logo">EasyFactor</span>
+    <span class="spacer"></span>
+    <nav>
+      <a mat-button routerLink="#somos-easyfactor">Quienes Somos</a>
+      <a mat-button routerLink="#nuestros-programas">Nuestros Programas</a>
+      <a mat-button routerLink="#caracteristicas">Características</a>
+    </nav>
   </mat-toolbar>
 
-  <!--<mat-grid-list cols="4" >
-    <mat-grid-tile *ngFor="let tile of tiles" [colspan]="tile.cols" [rowspan]="tile.rows" [style.background]="tile.color">
-      {{ tile.text }}
-    </mat-grid-tile>
-  </mat-grid-list>-->
-  <div
-    class="shadow-6 m-3 surface-card text-center  border-round-sm flex align-items-center justify-content-center font-semibold">
+
+  
+
+<!--
+  <div class="shadow-6 m-3 surface-card text-center  border-round-sm flex align-items-center justify-content-center font-semibold blanco">
     <div class="block bg-primary font-bold text-center p-4 border-round mb-3">
       <div class="h-10rem border-round bg-primary font-bold p-3 m-3 flex align-items-center justify-content-center">
-        <mat-card class="example-card">
-          <mat-card-header>
-            <mat-card-title></mat-card-title>
-            <mat-card-subtitle>Sección 1</mat-card-subtitle>
+        <mat-card class="example-card blanco">
+          <mat-card-header class="blanco">
+            <mat-card-title class="blanco"></mat-card-title>
+            <mat-card-subtitle class="blanco">Sección 1</mat-card-subtitle>
           </mat-card-header>
-          <mat-card-content>
+          <mat-card-content class="blanco">
             <p>Contenido sobre la seccion 1</p>
             <p>{{longText}}</p>
           </mat-card-content>
-          <mat-card-actions>
+          <mat-card-actions class="blanco">
             <button mat-button>Aceptar</button>
           </mat-card-actions>
         </mat-card>
@@ -67,43 +34,161 @@
     </div>
   </div>
 
-  <div
-    class="shadow-6 m-3 surface-card text-center  border-round-sm flex align-items-center justify-content-center font-semibold">
+  <div class="shadow-6 m-3 surface-card text-center  border-round-sm flex align-items-center justify-content-center font-semibold blanco">
     <div class="block bg-primary font-bold text-center p-4 border-round mb-3">
       <div class="h-10rem border-round bg-primary font-bold p-3 m-3 flex align-items-center justify-content-center">
-        <mat-card class="example-card">
-          <mat-card-header>
-            <mat-card-title></mat-card-title>
-            <mat-card-subtitle>Sección 2</mat-card-subtitle>
+        <mat-card class="example-card blanco">
+          <mat-card-header class="blanco">
+            <mat-card-title class="blanco"></mat-card-title>
+            <mat-card-subtitle class="blanco">Sección 2</mat-card-subtitle>
           </mat-card-header>
-          <mat-card-content>
+          <mat-card-content class="blanco">
             <p>Contenido sobre la seccion 2</p>
             <p>{{longText}}</p>
           </mat-card-content>
-          <mat-card-actions>
+          <mat-card-actions class="blanco">
             <button mat-button>Aceptar</button>
           </mat-card-actions>
         </mat-card>
       </div>
     </div>
   </div>
-  <footer class="pie-pagina">
-    <div class="grupo-1">
-      <div class="box">
+
+
+  -->
+
+  <section id="hero">
+    <h1>Plataforma de Factoraje Electrónico de Pago a Proveedores para Entidades Financieras<br> EasyFactor </h1>
+</section>
+
+
+
+<section id="somos-proya">
+    <div class="container">
+        <div class="img-container"></div>
+        <div class="texto">
+
+            <h2>Somos <span class="color-acento">EasyFactor</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veritatis a autem sed dignissimos commodi, voluptas incidunt voluptatibus cum, quia neque nulla consequatur laborum accusamus, perspiciatis odio nemo minus vel!</p>
+        </div>
+    </div>
+</section>
+<!--
+<section id="nuestros-programas">
+    <div class="container">
+        <h2>Beneficios que suman a la Entidad Financiera.</h2>
+        <div class="programas">
+            <div class="carta">
+                <h3>EasyFactor</h3>
+                <p>Automatiza el proceso de factoraje, lo que reduce la carga administrativa y los costos asociados al automatizar procesos manuales que toman tiempo y consumen recursos.</p>
+                <button>+ Info</button>
+            </div>
+            <div class="carta">
+                <h3>EasyFactor</h3>
+                <p> Permite a las instituciones financieras ofrecer un servicio de factoraje más rápido y eficiente, lo que puede traducirse en un aumento de la rentabilidad.</p>
+                <button>+ Info</button>
+            </div>
+            <div class="carta">
+                <h3>EasyFactor</h3>
+                <p>puede ayudar a las instituciones financieras a fortalecer su relación con sus clientes, al ofrecer un servicio que les permite mejorar su flujo de caja y reducir el riesgo de impago.</p>
+                <button>+ Info</button>
+            </div>  
+        </div>
+    </div>
+</section>
+-->
+<section id="nuestros-programas">
+  <div class="container">
+      <h2>Beneficios que suman a la Entidad Financiera.</h2>
+      <div class="botones">
+          <button class="btn-programa" (click)="showPrograma(1)">Programa 1</button>
+          <button class="btn-programa" (click)="showPrograma(2)">Programa 2</button>
+          <button class="btn-programa" (click)="showPrograma(3)">Programa 3</button>
+      </div>
+      <div class="programas">
+          <div class="carta programa1" *ngIf="programa === 1">
+              <h3>EasyFactor</h3>
+              <p>Automatiza el proceso de factoraje, lo que reduce la carga administrativa y los costos asociados al automatizar procesos manuales que toman tiempo y consumen recursos.</p>
+              <button>+ Info</button>
+          </div>
+          <div class="carta programa2" *ngIf="programa === 2">
+              <h3>EasyFactor</h3>
+              <p> Permite a las instituciones financieras ofrecer un servicio de factoraje más rápido y eficiente, lo que puede traducirse en un aumento de la rentabilidad.</p>
+              <button>+ Info</button>
+          </div>
+          <div class="carta programa3" *ngIf="programa === 3">
+              <h3>EasyFactor</h3>
+              <p>puede ayudar a las instituciones financieras a fortalecer su relación con sus clientes, al ofrecer un servicio que les permite mejorar su flujo de caja y reducir el riesgo de impago.</p>
+              <button>+ Info</button>
+          </div>  
+      </div>
+  </div>
+</section>
+
+
+
+<section id="caracteristicas">
+   <!-- <div class="container">
+        <ul>
+            <li>✔️ 100% online</li>
+            <li>✔️ Flexibilidad de horarios</li>
+            <li>✔️ Soporte 1:1</li>
+            <li>✔️ Asistencia financiera</li>
+        </ul>
+    </div>-->
+</section>
+
+<section id="final">
+  <div class="container">
+      <h2>Como funciona EasyFactor</h2>
+<!--colocar una imagen que el diseñador nos brindara-->>
+      <h3>Características relevantes de EasyFactor:</h3>
+      <ul>
+          <li>Simplifica el proceso de factoraje, desde la presentación de las facturas hasta el seguimiento de los pagos.</li>
+          <li>Cuenta con una interfaz intuitiva y amigable para todos los usuarios.</li>
+          <li>Está diseñada con altos estándares de calidad y seguridad.</li>
+          <li>Ofrece una solución rápida y eficiente para gestionar las facturas.</li>
+          <li>Automatiza el proceso de factoraje, incrementando eficiencia, ahorra tiempo y recursos.</li>
+          <li>Ofrece financiamiento a un mayor número de clientes.</li>
+      </ul>
+  </div>
+</section>
+
+
+<section id="final">
+  <div class="container">
+    <h2>Preguntas Frecuentes</h2>
+    <div class="accordion">
+      <mat-accordion>
+        <mat-expansion-panel *ngFor="let faq of faqs">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              {{ faq.question }}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>{{ faq.answer }}</p>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+  </div>
+</section>
+  <footer class="pie-pagina blanco">
+    <div class="grupo-1 blanco">
+      <div class="box blanco">
         <figure>
           <a href="#">
             <img src="C:\Angular\AppOneFirst\src\assets\js.png">
           </a>
         </figure>
       </div>
-      <div class="box">
+      <div class="box blanco">
         <h2>SOBRE NOSOTROS</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
       </div>
-      <div class="box">
+      <div class="box blanco">
         <h2>Redes sociales</h2>
-        <div class="red-social">
+        <div class="red-social blanco">
           <a href="#" class="fa fa-facebook"></a>
           <a href="#" class="fa fa-instagram"></a>
           <a href="#" class="fa fa-twitter"></a>
@@ -111,10 +196,8 @@
         </div>
       </div>
     </div>
-    <div class="grupo-2">
+    <div class="grupo-2 blanco">
       <small>&copy; 2021 <b>Copyright</b> - Todos los Derechos Reservados.</small>
     </div>
   </footer>
 </mat-sidenav-container>
-
-

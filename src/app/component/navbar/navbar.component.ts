@@ -33,4 +33,26 @@ export class NavbarComponent {
   Proin sed sem sit amet risus fringilla efficitur. Nullam tincidunt risus libero,
   a pulvinar dolor accumsan nec. Vestibulum ullamcorper magna vel mauris egestas,
    congue diam viverra. Suspendisse non enim et nisi eleifend posuere.`;
+
+
+faqs = [
+  { question: 'Pregunta 1', answer: 'Respuesta a la pregunta 1.' },
+  { question: 'Pregunta 2', answer: 'Respuesta a la pregunta 2.' },
+  { question: 'Pregunta 3', answer: 'Respuesta a la pregunta 3.' },
+  { question: 'Pregunta 4', answer: 'Respuesta a la pregunta 4.' },
+  { question: 'Pregunta 5', answer: 'Respuesta a la pregunta 5.' },
+  { question: 'Pregunta 6', answer: 'Respuesta a la pregunta 6.' },
+  // Agrega más preguntas y respuestas según sea necesario
+];
+
+programa: number | null = null;
+
+  showPrograma(programa: number) {
+    this.programa = programa;
+  }
+
+  hidePrograma() {
+    this.programa = null;
+  }
+
 }
