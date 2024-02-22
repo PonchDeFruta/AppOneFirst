@@ -5,34 +5,50 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/styles.css">
 	<title>EasyFactor</title>
 </head>
 <body>
+	<!--
+	<div class="menu" style="position: fixed; top: 50%; right: 100px; transform: translateY(-50%);">
+		<div class="scrollbar"></div>
+		<div class="sections">
+			<div class="section">Section 1</div>
+			<div class="section">Section 2</div>
+			<div class="section">Section 3</div>
+			<div class="section">Section 4</div>
+			<div class="section">Section 5</div>
+		</div>
+	</div>
+-->
+
 	<header>
-
-		<div class="navbar navbar-dark bg-light  fixed-top">
+		<div class="navbar navbar-dark navbar-custom fixed-top" id="navbar">
 			<div class="container">
-				<div class="row">
-					<div class="col-1 offset-1">
-						<h5>Descripción</h5>
+				<div class="row align-items-center">
+					<div class="col">
+						<h5><i class="fas fa-info-circle"></i> Descripción</h5>
 					</div>
-					<div class="col-1 offset-3">
-						<h5>Funcionamiento</h5>
+					<div class="col">
+						<h5><i class="fas fa-cogs"></i> Funcionamiento</h5>
 					</div>
-					<div class="col-1 offset-4">
-						<h5>Beneficios</h5>
+					<div class="col">
+						<h5><i class="fas fa-gift"></i> Beneficios</h5>
 					</div>
-					<div class="col-2"></div>
-
+					<div class="col-auto ms-auto">
+						<img src="img/logo.jpg" alt="Logo" class="img-fluid" style="max-height: 40px;">
+					</div>
 				</div>
 			</div>
 		</div>
 	</header>
+	
 
+	
 	<main>
 		<section class="py-5 bg-white text-center">
-			<div class="container" >
-				<div class="row">
+			<div class="container">
+				<div class="row" style="margin-top: -10px;"> <!-- Ajusta el valor del margen según sea necesario -->
 					<div class="col-lg">
 						<div id="carouselExampleDark" class="carousel carousel-dark slide">
 							<div class="carousel-indicators">
@@ -96,7 +112,7 @@
 				</div>
 
 				<div class="row py-4">
-					<div class="col-4 offset-8">
+					<div class="col-4 offset-6">
 						<p class="h2">
 							Como funciona EasyFactor
 						</p>
@@ -115,10 +131,58 @@
 					</div>
 				</div>
 
+				<div class="py-5 bg-light">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-4 offset-md-2">
+								<div class="card mb-4">
+									<img src="img/img1.jpg" alt="Descripción de la imagen" class="img-fluid">
+								</div>
+							</div>
+				
+							<div class="col-md-6">
+								<h4><strong>EasyFactor</strong></h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et nulla lectus. Nullam dignissim, lorem nec vehicula ultrices, nunc dui vulputate justo, nec tristique nulla lectus at orci.</p>
+							</div>
+						</div>
+				
+						<div class="row">
+							<div class="col-md-4 offset-md-2">
+								<div class="card mb-4">
+									<img src="img/img2.jpg" alt="Descripción de la imagen" class="img-fluid">
+								</div>
+							</div>
+				
+							<div class="col-md-6">
+								<h4><strong>EasyFactor</strong></h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et nulla lectus. Nullam dignissim, lorem nec vehicula ultrices, nunc dui vulputate justo, nec tristique nulla lectus at orci.</p>
+							</div>
+						</div>
+				
+						<div class="row">
+							<div class="col-md-4 offset-md-2">
+								<div class="card mb-4">
+									<img src="img/img3.jpg" alt="Descripción de la imagen" class="img-fluid">
+								</div>
+							</div>
+				
+							<div class="col-md-6">
+								<h4><strong>EasyFactor</strong></h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et nulla lectus. Nullam dignissim, lorem nec vehicula ultrices, nunc dui vulputate justo, nec tristique nulla lectus at orci.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+
+
+				
+
 				<div class="row py-4">
-					<div class="col-4 offset-8">
+					<div class="col-4 offset-6">
 						<p class="h2">
-							Cinfo razones por el cual elegir EasyFactor
+							Cinco razones por el cual elegir EasyFactor
 						</p>
 					</div>
 					<div class="col-3 offset-4">
@@ -175,6 +239,79 @@
 				</div>
 
 
+				<div class="container py-5">
+					<ul class="list-unstyled">
+						<li class="h4"><strong>• Es más seguro:</strong> Cumple con los estándares de seguridad más altos, garantizando la integridad de las transacciones.</li>
+						<li class="h4"><strong>• Es más eficiente:</strong>  Automatiza el proceso de factoraje, ahorrando tiempo y recursos.</li>
+						<li class="h4"><strong>• Es más ágil:</strong> Permite a las empresas acceder al financiamiento de manera rápida y sencilla.</li>
+						<li class="h4"><strong>• Es más innovador:</strong> Es una plataforma de factoraje electrónico, lo que la hace más eficiente y accesible que las plataformas tradicionales.</li>
+					</ul>
+					<p class="h3 mt-4">Según un estudio realizado por la Asociación Mexicana de Factoraje, el factoraje electrónico ha crecido a una tasa promedio del 20% anual en los últimos cinco años.</p>
+					<p class="h3">El estudio también señala que el factoraje electrónico es una de las principales opciones de financiamiento para las empresas pequeñas y medianas.</p>
+				</div>
+
+
+				<div class="py-5 bg-light">
+					<div class="container">
+						<div class="row">
+							<div class="col-4 col-sm-6 col-md-4 ">
+								<div class="card mb-4 ">
+									<img src="" alt="">
+								</div>
+							</div>
+		
+							<div class="col-4 offset-2">
+								<h1>Infraestructura que soporta la plataforma</h1>
+								
+							</div>					
+						</div>
+						<div class="row py-2">
+							<div class="col-8 offset-4 ">
+
+								<h5> La infraestructura de la plataforma web está diseñada para alta disponibilidad y rendimiento. Está alojada como centro principal en la Ciudad de México, y cada proyecto cuenta con su propia infraestructura.</h5>
+								<img src="img/img1.jpg" alt="Descripción de la imagen" class="img-fluid image-right">
+
+								<p class="lead">La arquitectura incluye:</p>
+								<ul>
+									<li>Más de 45 servidores de última generación en un data center exclusivo.</li>
+									<li>Disponibilidad garantizada del 99%.</li>
+									<li>3 enlaces dedicados de 200Mb cada uno para asegurar estabilidad en la comunicación.</li>
+									<li>Centro de datos principal y un warm site con infraestructura redundante.</li>
+									<li>Firewalls perimetrales redundantes, protección contra denegación de servicios, balanceadores de tráfico y DNS Premium.</li>
+									<li>Análisis trimestral de vulnerabilidades con tiempos de solución definidos según la criticidad.</li>
+								</ul>
+								<p class="lead">Esquema de soporte de la plataforma:</p>
+								<ul>
+									<li>Soporte técnico disponible 24x7x365.</li>
+									<li>Matriz de escalado para soporte de segundo y tercer nivel.</li>
+									<li>Horarios establecidos para diferentes servicios con ventanas de mantenimiento programadas.</li>
+									<li>Mantenimientos agendados con un mes de anticipación y pruebas post-mantenimiento.</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="row py-4">
+							<div class="col-4 offset-6">
+								<p class="h2">
+									EasyFactor, líder en soluciones de factoraje electrónico.
+								</p>
+							</div>
+							<div class="col-8 offset-4 ">
+								<p>EasyFactor surge con el propósito de ofrecer una plataforma de factoraje electrónico ágil, segura y transparente, que facilite el acceso al financiamiento de las pymes mexicanas, contribuyendo a su crecimiento y desarrollo brindando una plataforma de factoraje electrónico que conecte a las pymes con entidades financieras, ofreciendo soluciones a la medida de sus necesidades, con rapidez, eficiencia y confianza.</p>
+						
+								<p>Buscamos consolidarnos como la plataforma de referencia de factoraje electrónico en México, generando valor para nuestros clientes, socios y colaboradores.</p>
+								<p class="text-center">¡Impulsamos la Visión de Tu Empresa!</p>
+							</div>
+						</div>
+						
+						
+
+				
+			
+				
+					<div class="col-4 offset-6">
+						<h1>Preguntas Frecuentes</h1>
+					</div>	
 				<div class="row py-4">
 					<div class="col">
 						<div class="accordion accordion-flush" id="accordionFlushExample">
@@ -352,5 +489,7 @@
 	</footer>
 
 	<script src="../../js/bootstrap.bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js\navBarfunct.js"></script>
 </body>
 </html>
